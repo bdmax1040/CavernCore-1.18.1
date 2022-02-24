@@ -1,10 +1,6 @@
 {
     "pack": {
         "pack_format": 8,
-<<<<<<< HEAD
 		"description": [{"text":"CavernCore Datapack","color":"red"},{"text":"\nBy bdmax1040","color":"green"}]
-=======
-        "description": "§cA custom datapack made for the CavernSMP 100h world!"
->>>>>>> 47ad7ae6253fd579ebd51067f509f4d3aa7c7d9a
     }
 }
