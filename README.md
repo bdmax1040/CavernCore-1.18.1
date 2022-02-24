@@ -4,7 +4,7 @@
 
 This is the core datapack that manages the logistics and scoreboards of the 100h world for the CavernSMP Network. 
 
-**This datapack is dependent on having both the "Track Statistics" + "Track Raw Sttistics" datapack from VanillaTweaks** - https://vanillatweaks.net/share/#vaCB2s
+**This datapack is dependent on having both the "Track Statistics" + "Track Raw Statistics" datapack from VanillaTweaks** - https://vanillatweaks.net/share/#vaCB2s
 
 ## **Features List**
 
