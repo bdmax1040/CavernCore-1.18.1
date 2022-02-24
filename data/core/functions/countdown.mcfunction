@@ -1,4 +1,13 @@
-#Time notification message
+########
+#CavernCore
+#v1.0.0
+#1.18.1
+########
+
+
+
+
+#Time notification messages
 
 #5h
 execute as @a if score @s hc_playTick matches 360000 run tellraw @s {"text":"5/100 Hours","bold":true,"color":"red"}

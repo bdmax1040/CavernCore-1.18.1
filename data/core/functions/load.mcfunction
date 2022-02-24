@@ -1,5 +1,12 @@
-#Startup Message
+########
+#CavernCore
+#v1.0.0
+#1.18.1
+########
 
-#Launch message optional
 
-#tellraw @a {"text": "CavernSMP datapack has successfuly loaded!", "color": "green"}
+
+
+#Optional Startup Message
+
+tellraw @a {"text": "CavernCore datapack has successfuly loaded!", "color": "green"}
