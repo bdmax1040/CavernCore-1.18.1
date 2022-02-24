@@ -1,5 +1,6 @@
 {
     "values": [
-    "core:load"
+    "core:load",
+    "core:teams"
 ]
 }

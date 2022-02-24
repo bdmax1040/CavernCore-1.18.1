@@ -1,6 +1,6 @@
 ########
 #CavernCore
-#v1.1.0
+#v1.2.0
 #1.18.1
 ########
 
@@ -8,6 +8,9 @@
 
 
 #Time notification messages
+
+#0h
+execute as @a if score @s hc_playTick matches 0..3600000 run team join Stage1
 
 #5h
 execute as @a if score @s hc_playTick matches 360000 run tellraw @s {"text":"5/100 Hours","bold":true,"color":"red"}
@@ -38,6 +41,7 @@ execute as @a if score @s hc_playTick matches 3240000 run tellraw @s {"text":"45
 
 #50h
 execute as @a if score @s hc_playTick matches 3600000 run tellraw @s {"text":"50/100 Hours! - Halfway Done!","bold":true,"color":"red"}
+execute as @a if score @s hc_playTick matches 3600000..5400000 run team join Stage2
 
 #55h
 execute as @a if score @s hc_playTick matches 3960000 run tellraw @s {"text":"55/100 Hours","bold":true,"color":"red"}
@@ -53,6 +57,7 @@ execute as @a if score @s hc_playTick matches 5040000 run tellraw @s {"text":"70
 
 #75h
 execute as @a if score @s hc_playTick matches 5400000 run tellraw @s {"text":"75/100 Hours","bold":true,"color":"red"}
+execute as @a if score @s hc_playTick matches 5400000..6480000 run team join Stage3
 
 #80h
 execute as @a if score @s hc_playTick matches 5760000 run tellraw @s {"text":"80/100 Hours","bold":true,"color":"red"}
@@ -62,6 +67,7 @@ execute as @a if score @s hc_playTick matches 6120000 run tellraw @s {"text":"85
 
 #90h
 execute as @a if score @s hc_playTick matches 6480000 run tellraw @s {"text":"90/100 Hours","bold":true,"color":"red"}
+execute as @a if score @s hc_playTick matches 6480000..7200000 run team join Stage4
 
 #95h
 execute as @a if score @s hc_playTick matches 6840000 run tellraw @s {"text":"95/100 Hours","bold":true,"color":"red"}
@@ -142,9 +148,14 @@ execute as @a if score @s hc_playTick matches 7199980 run tellraw @s {"text":"1 
 
 
 #TIME UP!
+execute as @a if score @s hc_playTick matches 7200000.. run team join Temp
 execute as @a if score @s hc_playTick matches 7200000 run title @s times 20 100 20
 execute as @a if score @s hc_playTick matches 7200000 run title @s subtitle {"text":"Thanks for playing! :D","color":"green"}
 execute as @a if score @s hc_playTick matches 7200000 run title @s title {"text":"TIME UP!","bold":true,"color":"red"}
 
 #Broadcast Notification
-execute as @a if score @s hc_playTick matches 7200000 run tellraw @a {"text":"","bold":true,"color":"green","extra":[{"selector":"@p"},{"text":" has run out of time!"}]}
+execute as @a if score @s hc_playTick matches 7200000 run tellraw @a {"text":"","bold":false,"color":"green","extra":[{"selector":"@p"},{"bold": true,"text":" has run out of time!"}]}
+
+
+#Join Stage 5
+execute as @a if score @s hc_playTick matches 7200010.. run team join Stage5
