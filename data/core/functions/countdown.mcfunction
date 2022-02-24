@@ -142,7 +142,9 @@ execute as @a if score @s hc_playTick matches 7199980 run tellraw @s {"text":"1 
 
 
 #TIME UP!
-execute as @a if score @s hc_playTick matches 7200000 run tellraw @s {"text":"TIME UP!","bold":true,"color":"red"}
+execute as @a if score @s hc_playTick matches 7200000 run title @s times 20 100 20
+execute as @a if score @s hc_playTick matches 7200000 run title @s subtitle {"text":"Thanks for playing! :D","color":"green"}
+execute as @a if score @s hc_playTick matches 7200000 run title @s title {"text":"TIME UP!","bold":true,"color":"red"}
 
 #Broadcast Notification
 execute as @a if score @s hc_playTick matches 7200000 run tellraw @a {"text":"","bold":true,"color":"green","extra":[{"selector":"@p"},{"text":" has run out of time!"}]}
